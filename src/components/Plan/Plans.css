@@ -1,0 +1,184 @@
+.plans-container {
+    margin-top: -4rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+}
+
+.plans-blur-1 {
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0rem;
+}
+
+.plans-blur-2 {
+    width: 32rem;
+    height: 23rem;
+    top: 10rem;
+    right: 0rem;
+}
+
+.offer-zone {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+
+    /* border: 2px solid white; */
+    background-color: rgba(21, 27, 19, 0.185);
+    border-radius: 20px;
+    box-shadow: -10px 10px 90px rgb(43, 21, 12);
+    margin: auto;
+}
+
+.offer-zone:hover {
+    box-shadow: inset -10px 10px 90px rgb(43, 21, 12),
+        -10px 10px 90px rgb(43, 21, 12);
+}
+
+
+.offer {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 3rem;
+    align-items: center;
+    padding-right: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.set-timer {
+    display: flex;
+    gap: 0.4rem;
+    justify-content: flex-start;
+    padding: 1rem 3rem;
+
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.set-timer p {
+    font-size: 26px;
+    color: whitesmoke;
+}
+
+.set-timer span {
+    font-size: 26px;
+    /* text-transform: uppercase; */
+    color: rgb(10, 0, 0);
+}
+
+.set-timer .t-small {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.set-timer div>:nth-child(2) {
+    /* color: rgb(43, 21, 12); */
+    color: rgb(10, 0, 0);
+    font-weight: bolder;
+}
+
+.plans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--caloryCard);
+    color: white;
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 15rem;
+}
+
+.plan:nth-child(2) {
+
+    transform: scale(1.15);
+    background: var(--planCard);
+}
+
+
+.plan>svg {
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan>:nth-child(2) {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.plan .price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.plan:nth-child(5) {
+    font-size: 2rem;
+}
+
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature>img {
+    width: 1rem;
+}
+
+.plan:nth-child(2)>svg {
+    fill: white;
+}
+
+.plan:nth-child(2)>button {
+    color: var(--orange);
+}
+
+.offer-price {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+/* responsive */
+
+@media screen and (max-width : 768px) {
+    .plans {
+        flex-direction: column;
+
+    }
+
+    .plans>:nth-child(2) {
+        transform: none;
+    }
+
+    .offer-zone {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        padding: auto;
+        margin: auto;
+        box-shadow: none;
+        background: none;
+
+    }
+
+}
